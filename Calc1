@@ -1,0 +1,14 @@
+n1 = int(input("Digite o primeiro valor: " ))
+n2 = int(input("Digite o segundo valor: "))
+operador = input("Digite um operador: " )
+
+if operador == "+":
+    print(f"O Resultado é: {n1 + n2}")
+elif operador == "=":
+    print(f"O Resultado é: {n1 - n2}")
+elif operador == "/":
+    print(f"O Resultado é: {n1 // n2}")
+elif operador == "*":
+    print(f"O Resultado é: {n1 * n2}")
+else:
+    print("O Resultado é: 0")
