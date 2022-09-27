@@ -1,14 +1,22 @@
-n1 = int(input("Digite o primeiro valor: " ))
-n2 = int(input("Digite o segundo valor: "))
-operador = input("Digite um operador: " )
+num1 = int(input("Digite o primeiro valor: "))
+num2 = int(input("Digite o segundo valor: "))
+op = int(input("Escolha o operador:  1. Soma, 2. Subtração, 3. Multiplicação, 4. Divisão: "))
 
-if operador == "+":
-    print(f"O Resultado é: {n1 + n2}")
-elif operador == "=":
-    print(f"O Resultado é: {n1 - n2}")
-elif operador == "/":
-    print(f"O Resultado é: {n1 // n2}")
-elif operador == "*":
-    print(f"O Resultado é: {n1 * n2}")
-else:
-    print("O Resultado é: 0")
+def calc(num1,num2, op):
+    if op == 1:
+        resultado = num1 + num2
+        print(f"O resultado é {resultado}.")
+    elif op == 2:
+        resultado = num1 - num2
+        print(f"O resultado é {resultado}.")
+    elif op == 3:
+        resultado = num1 * num2
+        print(f"O resultado é {resultado}.")
+    elif op == 4:
+        resultado = num1 // num2
+        print(f"O resultado é {resultado}.")
+    else:
+        print(f"O resultado é 0.")
+    return
+
+resultado = calc(num1,num2,op)
