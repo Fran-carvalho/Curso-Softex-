@@ -1,5 +1,3 @@
-
-
 VOTOS_CAD_X = 0
 VOTOS_CAD_Y= 0
 VOTOS_CAD_Z = 0
@@ -39,8 +37,8 @@ while True:
         print("Voto inválido, tente novamente.")
 
 
-    encerrar = input("Gostaria de encerrar a votação? Responda com S ou N: ")
-    if encerrar == "S":
+    encerrar = input("Gostaria de encerrar a votação? Responda com SIM ou NAO: ")
+    if encerrar == "SIM":
         if VOTOS_CAD_X > VOTOS_CAD_Y and VOTOS_CAD_X > VOTOS_CAD_Z:
             print()
             print(f"O Candidato X recebeu: {VOTOS_CAD_X} votos.")
@@ -76,9 +74,5 @@ while True:
 
         break
 
-    if encerrar == 'N':
+    if encerrar == 'NAO':
         continue
-
-
-
-
